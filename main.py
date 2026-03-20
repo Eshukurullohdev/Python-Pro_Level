@@ -96,30 +96,61 @@
 # print(b1 + b2)
 
 
-class BankAccount:
-    def __init__(self, owner, balance=0):
-        self.owner = owner
-        self.balance = balance
+# class BankAccount:
+#     def __init__(self, owner, balance=0):
+#         self.owner = owner
+#         self.balance = balance
     
-    def deposit(self, amount):
-        self.balance += amount
-        print(f"{amount} added. New balance: {self.balance}")
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print(f"{amount} added. New balance: {self.balance}")
 
-    def withdraw(self, amount):
-        if amount > self.balance:
-            print("Not enough money!")
-        else:
-            self.balance -= amount
-            print(f"{amount} withdraw. Balance: {self.balance}")
-    def __str__(self):
-        return f"{self.owner}'s balance: {self.balance}"
-
-
-acc1 = BankAccount("Ali", 100)
-
-acc1.deposit(50)
-acc1.withdraw(30)
-print(acc1)
+#     def withdraw(self, amount):
+#         if amount > self.balance:
+#             print("Not enough money!")
+#         else:
+#             self.balance -= amount
+#             print(f"{amount} withdraw. Balance: {self.balance}")
+#     def __str__(self):
+#         return f"{self.owner}'s balance: {self.balance}"
 
 
+# acc1 = BankAccount("Ali", 100)
 
+# acc1.deposit(50)
+# acc1.withdraw(30)
+# print(acc1)
+
+
+
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def info(self):
+#         return f"{self.name} is {self.age} old"
+
+    
+# student1 = Student("Ali", 20)
+# print(student1.info())
+
+
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def speak(self):
+#         return "Animal sound"
+
+
+# class Cat(Animal):
+#     # shu yerga yoz
+#     def speak(self):
+#         return "says woof"
+
+
+# cat1 = Cat("Murka")
+
+# print(cat1.name)
+# print(cat1.speak())
